@@ -1,0 +1,29 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+nav img {
+    height: 7vh;
+    margin-left: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 15px;
+}
+
+a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+

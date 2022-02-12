@@ -9,10 +9,10 @@ const Navbar = () => {
       </Link>
       <ul>
         <Link to="/random">
-          <li>Random Comic!</li>
+          <li>Random</li>
         </Link>
         <Link to="/search">
-          <li>Search for Comic!</li>
+          <li>Search</li>
         </Link>
         <Link to="/bio">
           <li>Bio</li>
