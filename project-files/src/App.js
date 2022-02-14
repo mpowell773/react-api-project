@@ -5,6 +5,7 @@ import RandomPage from "./Components/RandomPage/RandomPage";
 import SearchPage from "./Components/SearchPage/SearchPage";
 import Bio from "./Components/Bio/Bio";
 import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -48,6 +49,8 @@ function App() {
           <Route path="/bio" element={<Bio />}></Route>
         </Routes>
       </main>
+
+      <Footer />
     </div>
   );
 }

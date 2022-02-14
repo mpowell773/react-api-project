@@ -20,7 +20,7 @@ const Comic = ({
           ? `${safe_title} (${num})`
           : ``}
       </h3>
-      <img src={img} alt={alt} />
+      <img src={img} alt={alt} title={alt} />
       <h4>
         {month} {day} {year}
       </h4>

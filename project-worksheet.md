@@ -75,8 +75,8 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Fill Out About Component| H | 1hr | .5hr | 
 | API Communication| H | 1hr | 4hrs | 
 | Implement Integration of Fetch with Comic Component| H | 3hr | .5hr | 
-| Add Random Button for Fetch Request| H | 1.5hrs |  | 
-| Add Random Logic to Update Url| H | 1.5hr|  | 
+| Add Random Button for Fetch Request| H | 1.5hrs | .5hr | 
+| Add Random Logic to Update Url| H | 1.5hr| .5hr | 
 | Add Form functionality to Search Component| H | 3hrs |  | 
 | Styling | H | 5hrs |  | 
 | Responsiveness| H | 3hrs |  | 
