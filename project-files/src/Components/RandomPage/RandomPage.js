@@ -6,7 +6,7 @@ const RandomPage = () => {
   const [comic, setComic] = useState({});
 
   useEffect(() => {
-    //getRandomComic()
+    getRandomComic()
   }, []);
 
   //API Request

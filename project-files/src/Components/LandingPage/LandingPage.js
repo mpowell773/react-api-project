@@ -1,6 +1,8 @@
 import "./LandingPage.css";
+import { useState, useEffect } from "react";
 
-const LandingPage = () => {
+const LandingPage = ({img, alt, safe_title}) => {
+
   return (
     <div>
       <h2>XKCD Randomizer and Searcher</h2>
@@ -17,7 +19,14 @@ const LandingPage = () => {
         This was built with the power of REACT. For the people, and mostly for a
         project.
       </p>
+
+      <h3>{safe_title}</h3>
+      <img src={img} alt={alt}  />
     </div>
+
+   
+
+
   );
 };
 
