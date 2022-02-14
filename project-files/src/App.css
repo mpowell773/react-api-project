@@ -1,5 +1,9 @@
+body {
+    background-color: #96c8a1; 
+}
+
 #root {
     margin: 1vh 5vw;
-    font-family: xkcd-script, sans-serif;
+    font-family: xkcd-script, sans-serif;   
 }
 

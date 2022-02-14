@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 const LandingPage = ({img, alt, safe_title}) => {
 
   return (
-    <div>
-      <h2>XKCD Randomizer and Searcher</h2>
+    <div className="landing-page">
+      <h2>XKCD Randomizer/Searcher</h2>
       <p>
         Hello and welcome! Let's totally ignore that there is already search and
         randomize functionalities already built into the XKCD website.{" "}
