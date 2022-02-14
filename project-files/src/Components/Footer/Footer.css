@@ -24,9 +24,10 @@
 .link {
     text-decoration: none;
     color: rgb(29, 1, 131);
+    transition-duration: .3s;
 }
 
 .link:hover {
-    color: blue;
+    color: #4e3edd;
 }
 

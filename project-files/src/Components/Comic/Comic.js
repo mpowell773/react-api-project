@@ -22,7 +22,7 @@ const Comic = ({
       </h3>
       <img src={img} alt={alt} title={alt} />
       <h4>
-        Date of Publication: {month} {day} {year}
+        Date of Publication: {month}/{day}/{year}
       </h4>
     </div>
   );

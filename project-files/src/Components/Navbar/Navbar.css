@@ -31,10 +31,11 @@ nav a {
     padding: 0 10px;
     text-decoration: none;
     color: black;
+    transition-duration: .3s;
 }
 
 nav a:hover {
-    color: blue;
+    color: #4e3edd;
 }
 
 

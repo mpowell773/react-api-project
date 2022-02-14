@@ -3,21 +3,41 @@
 /*--------------*/
 
 .random-page {
-    margin-top: 5vh;
-    background-color: white;
-    border: solid 1px black;
-    border-radius: 10px;
-    padding: 2vh 5vw;
+  margin: 5vh 0;
+  background-color: white;
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 2vh 5vw;
 }
 
 .random-page h2 {
-    text-align: center;
-    text-decoration: underline;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .random-page button {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2em;
+  text-decoration: none;
+  background-color: #aff0be;
 
-    border: solid 1px #709779; 
+  border: solid 1px #709779;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgb(0, 65, 51);
+
+  transition-duration: 0.2s;
+}
+
+.random-page button:active {
+  background-color: #709779;
+  border: solid 1px #a2ddb0;
+}
+
+@media (hover: hover) {
+  .random-page button:hover {
+    transform: scale(1.2) perspective(1px);
+    cursor: pointer;
+  }
 }
