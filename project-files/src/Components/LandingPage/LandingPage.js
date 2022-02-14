@@ -21,7 +21,7 @@ const LandingPage = ({img, alt, safe_title}) => {
       </p>
 
       <h3>{safe_title}</h3>
-      <img src={img} alt={alt}  />
+      <img src={img} alt={alt} title={alt}  />
     </div>
 
    
