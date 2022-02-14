@@ -71,8 +71,8 @@ Based on the initial logic defined in the previous sections try and breakdown th
 ### MVP
 | Component | Priority | Estimated Time | Actual Time | 
 | --- | :---: |  :---: | :---: | 
-| Create Skeletal Structure and Functioning React Router| H | 3hrs| | 
-| Fill Out About Component| H | 1hr |  | 
+| Create Skeletal Structure and Functioning React Router| H | 3hrs| 3hrs | 
+| Fill Out About Component| H | 1hr | .5hr | 
 | API Communication| H | 1hr |  | 
 | Implement Integration of Fetch with Comic Component| H | 3hr |  | 
 | Add Random Button for Fetch Request| H | 1.5hrs |  | 
