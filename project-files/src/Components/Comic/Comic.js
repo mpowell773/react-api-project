@@ -1,9 +1,13 @@
 import './Comic.css'
 
-const Comic = () => {
+const Comic = ({alt, day, img, link, month, news, num, safe_title, title, transcript, year}) => {
     
     return (
-        <h3>Comic</h3>
+        <div>
+            <h3>{safe_title} ({num})</h3>
+            <img src={img} alt={alt} />
+            <h4>{month} {day} {year}</h4>
+        </div>
     )
 
 } 
