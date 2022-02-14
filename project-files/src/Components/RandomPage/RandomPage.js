@@ -2,7 +2,7 @@ import "./RandomPage.css";
 import { useEffect, useState } from "react";
 import Comic from "../Comic/Comic";
 
-const RandomPage = () => {
+const RandomPage = ({num}) => {
   const [comic, setComic] = useState({});
 
   useEffect(() => {
@@ -11,7 +11,12 @@ const RandomPage = () => {
 
   //API Request
   const getRandomComic = () => {
-    const url = "https://xkcd.now.sh?comic=latest";
+      //prop from latest comic sets max number, if api fetch failed, number is set statically to 2580
+      let maxNumber = num ? num : 2580;
+      //randomized number
+      let randomNumber = Math.floor(Math.random() * maxNumber); 
+
+    const url = `https://xkcd.now.sh?comic=${randomNumber}`;
 
     fetch(url)
       .then((response) => response.json())
@@ -20,7 +25,7 @@ const RandomPage = () => {
   };
 
 
-// Rendering our page and passing properties into Comic
+// Rendering page and passing properties into Comic
   return (
     <div>
       <h3>Random</h3>
@@ -42,3 +47,6 @@ const RandomPage = () => {
 };
 
 export default RandomPage;
+
+
+//xkcd 1513 :(
