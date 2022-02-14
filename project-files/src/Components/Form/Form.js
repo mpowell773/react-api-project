@@ -1,10 +1,12 @@
 import './Form.css'
+import { useState } from 'react';
 
-const Form = () => {
+const Form = ({ setFormSubmit}) => {
+    const [form, setForm] = useState ('');
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        getWeather(form);
+        setFormSubmit(form);
         
     }
     
@@ -15,7 +17,7 @@ const Form = () => {
     
         return (
             <form onSubmit={handleSubmit}>
-                <label>Zipcode: </label>
+                <label>Type a number: </label>
                 <input type='text' value={form} onChange={handleChange} />
                 <input type='submit' value='submit' />
             </form>
