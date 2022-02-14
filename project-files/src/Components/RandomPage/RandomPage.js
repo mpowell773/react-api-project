@@ -28,8 +28,8 @@ const RandomPage = ({num}) => {
 
 // Rendering page and passing properties into Comic
   return (
-    <div>
-      <h3>Random</h3>
+    <div className="random-page">
+      <h2>The Random Page</h2>
       <Comic
         alt={comic.alt}
         day={comic.day}

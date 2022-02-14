@@ -27,28 +27,30 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      <div className="content-wrap">
+        <Navbar />
 
-      <main>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <LandingPage
-                img={latestComic.img}
-                alt={latestComic.alt}
-                safe_title={latestComic.safe_title}
-              />
-            }
-          ></Route>
-          <Route
-            path="/random"
-            element={<RandomPage num={latestComic.num} />}
-          ></Route>
-          <Route path="/search" element={<SearchPage />}></Route>
-          <Route path="/bio" element={<Bio />}></Route>
-        </Routes>
-      </main>
+        <main>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <LandingPage
+                  img={latestComic.img}
+                  alt={latestComic.alt}
+                  safe_title={latestComic.safe_title}
+                />
+              }
+            ></Route>
+            <Route
+              path="/random"
+              element={<RandomPage num={latestComic.num} />}
+            ></Route>
+            <Route path="/search" element={<SearchPage />}></Route>
+            <Route path="/bio" element={<Bio />}></Route>
+          </Routes>
+        </main>
+      </div>
 
       <Footer />
     </div>

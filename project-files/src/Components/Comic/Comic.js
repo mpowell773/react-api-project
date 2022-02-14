@@ -17,12 +17,12 @@ const Comic = ({
     <div className="comic-page">
       <h3>
         {safe_title
-          ? `${safe_title} (${num})`
+          ? `${safe_title} #${num}`
           : ``}
       </h3>
       <img src={img} alt={alt} title={alt} />
       <h4>
-        {month} {day} {year}
+        Date of Publication: {month} {day} {year}
       </h4>
     </div>
   );

@@ -1,5 +1,9 @@
+/*--------------*/
+/* Base Styling */
+/*--------------*/
+
 .landing-page {
-    margin-top: 5vh;
+    margin: 5vh 0;
     background-color: white;
     border: solid 1px black;
     border-radius: 10px;
@@ -11,10 +15,12 @@
 }
 
 .landing-page h3 {
+    margin-top: 5vh;
     text-align: center;
 }
 
 .landing-page img {
     display: block;
    margin: 0 auto;
+   width: 80vw;
 }
