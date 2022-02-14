@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* imports xkcd-font */
+@font-face {
+	font-family: xkcd-script;
+	src: url('../src/fonts/xkcd-script/font/xkcd-script.woff') format('woff');
+}
