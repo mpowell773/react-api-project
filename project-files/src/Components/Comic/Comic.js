@@ -14,7 +14,7 @@ const Comic = ({
   year,
 }) => {
   return (
-    <div>
+    <div className="comic-page">
       <h3>
         {safe_title
           ? `${safe_title} (${num})`

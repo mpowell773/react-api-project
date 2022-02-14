@@ -4,17 +4,17 @@ import Comic from "../Comic/Comic";
 
 const RandomPage = ({num}) => {
   const [comic, setComic] = useState({});
+  const [toggle, setToggle] = useState (true);
 
   useEffect(() => {
     getRandomComic()
-  }, []);
+  }, [toggle]);
 
   //API Request
   const getRandomComic = () => {
-      //prop from latest comic sets max number, if api fetch failed, number is set statically to 2580
-      let maxNumber = num ? num : 2580;
-      //randomized number
-      let randomNumber = Math.floor(Math.random() * maxNumber); 
+    //prop from latest comic sets max number, if api fetch failed, number is set statically to 2580
+    let maxNumber = num ? num : 2580;
+    let randomNumber = Math.floor(Math.random() * maxNumber); 
 
     const url = `https://xkcd.now.sh?comic=${randomNumber}`;
 
@@ -24,6 +24,7 @@ const RandomPage = ({num}) => {
       .catch(() => console.log("no comics for you Sadge"));
   };
 
+  console.log(comic);
 
 // Rendering page and passing properties into Comic
   return (
@@ -42,6 +43,7 @@ const RandomPage = ({num}) => {
         transcript={comic.transcript}
         year={comic.year}
       />
+      <button onClick={() => setToggle(!toggle)}>Another Comic!</button>
     </div>
   );
 };
