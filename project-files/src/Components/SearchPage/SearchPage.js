@@ -26,7 +26,7 @@ const SearchPage = ({ num }) => {
   // Rendering page and passing properties into Comic
   return (
     <div className="search-page">
-      <h2>Search</h2>
+      <h2>The Search Page</h2>
       <Form setFormSubmit={setFormSubmit} num={num} />
       <Comic
         alt={comic.alt}
