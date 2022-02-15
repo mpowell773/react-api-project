@@ -38,6 +38,7 @@
 @media (hover: hover) {
   .random-page button:hover {
     transform: scale(1.2) perspective(1px);
+    box-shadow: 3px 3px 5px rgb(0, 65, 51);
     cursor: pointer;
   }
 }

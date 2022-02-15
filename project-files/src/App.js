@@ -46,7 +46,7 @@ function App() {
               path="/random"
               element={<RandomPage num={latestComic.num} />}
             ></Route>
-            <Route path="/search" element={<SearchPage />}></Route>
+            <Route path="/search" element={<SearchPage num={latestComic.num} />}></Route>
             <Route path="/bio" element={<Bio />}></Route>
           </Routes>
         </main>

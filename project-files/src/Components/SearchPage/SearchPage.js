@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Comic from "../Comic/Comic";
 import Form from "../Form/Form";
 
-const SearchPage = () => {
+const SearchPage = ({num}) => {
   const [comic, setComic] = useState({});
   const [formSubmit, setFormSubmit] = useState("");
 
@@ -25,9 +25,9 @@ const SearchPage = () => {
 
   // Rendering page and passing properties into Comic
   return (
-    <div>
+    <div className="search-page">
       <h3>Search</h3>
-      <Form setFormSubmit={setFormSubmit} />
+      <Form setFormSubmit={setFormSubmit} num={num} />
       <Comic
         alt={comic.alt}
         day={comic.day}
