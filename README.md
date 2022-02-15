@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Links
 
-## Available Scripts
+- [github repo link](https://github.com/mpowell773/react-api-project)
+- [DOES NOT EXIST YET: deployment link]()
 
-In the project directory, you can run:
+## Project Description
 
-### `npm start`
+I am using XKCD's api to pull a random comic on the main page. There will be a subsequent tab where you can search by number for a comic. Post MVP, After the fetch to XKCD, my plan is to fetch from GIPHY a random GIF tied to the title of the XKCD comic.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## API
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+{
+"month": "2",
+"num": 223,
+"link": "",
+"year": "2007",
+"news": "",
+"safe_title": "Valentine's Day",
+"transcript": "{{Valentine's Day}}\n[[There is a large, shaded, red heart.]]\n{{Because love isn't quite complicated enough as it is.}}\n{{alt: One of these days me and Joey Comeau will get around to subverting hetero-normative paradigm and fixing all this.}}",
+"alt": "One of these days me and Joey Comeau will get around to subverting the hetero-normative paradigm and fixing all this.",
+"img": "https://imgs.xkcd.com/comics/valentines_day.jpg",
+"title": "Valentine's Day",
+"day": "14"
+}
+```
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Wireframes
 
-### `npm run build`
+Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe. Also, define the the React components and the architectural design of your app.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Wireframe 1](/project-worksheet-pictures/wire-frame-1.jpg)
+- [Wireframe 2](/project-worksheet-pictures/wire-frame-2.jpg)
+- [React Architecture](/project-worksheet-pictures/react-architecture.jpg)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### MVP 
+- Implement communication between app and xkcd api 
+- Set up routing between app pages
+- Build nav and footer 
+- Create basic about/intro page
+- Display xkcd comic and info on random component
+- Display xkcd comic after a form input on search component
+- Implement and test responsiveness
 
-### `npm run eject`
+#### PostMVP
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Implement communication between app and giphy api 
+- Utilize logic to check if xkcd fetch request has occured and then fetches from giphy api
+- Adjust responsiveness for new image
+- Add basic animation effects with css (glow on nav hover, etc.)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Components
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
 
-## Learn More
+| Component | Description | 
+| --- | :---: |  
+| App | React Routing and rendering of the nav, main, footer| 
+| Intro | Stateless, Has introduction/about text for app | 
+| Random | useEffect to pull data from api, useState button toggle for useEffect, Comic component to be nested within | 
+| Search | useEffect to pull data from api, useState for form to access data and adjust api url, addiontal useState to create a toggle for when the form is submitted so fetches and rerenders Comic, Form Component nested within, Comic component nested within | 
+| Comic| Many properties to fill in the title, image, etc | 
+| Form | Basic form that will take in properties from Search component so that it's actually functional | 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### MVP
+| Component | Priority | Estimated Time | Actual Time | 
+| --- | :---: |  :---: | :---: | 
+| Create Skeletal Structure and Functioning React Router| H | 3hrs| 3hrs | 
+| Fill Out About Component| H | 1hr | .5hr | 
+| API Communication| H | 1hr | 4hrs | 
+| Implement Integration of Fetch with Comic Component| H | 3hr | .5hr | 
+| Add Random Button for Fetch Request| H | 1.5hrs | .5hr | 
+| Add Random Logic to Update Url| H | 1.5hr| .5hr | 
+| Add Form functionality to Search Component| H | 3hrs | 1hr | 
+| Styling | H | 5hrs | 6h | 
+| Responsiveness| H | 3hrs |  | 
+| Total | H | 22hrs|  | 
 
-### Code Splitting
+### Post-MVP
+| Component | Priority | Estimated Time | Actual Time | 
+| --- | :---: |  :---: | :---: | 
+| Add Giphy API and Fetch Image | H | 2hrs | | 
+| Add Logic so Giphy Waits and Then Fetches Random Image Based on Title| H | 4hrs |  | 
+| Dynamic CSS| M | 3hrs |  | 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| Total | H | 9hrs|  | 
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Additional Libraries
+- React Router
+- [XKCD font from github](https://github.com/ipython/xkcd-font)
+- [react-alert](https://www.npmjs.com/package/react-alert)
 
-### Making a Progressive Web App
+## Code Snippet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+function reverse(string) {
+	// here is the code to reverse a string of text
+}
+```
