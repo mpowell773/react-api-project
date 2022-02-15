@@ -21,7 +21,7 @@ const Bio = () => {
       </p>
       <p>
         If you would like to see more of my work, click{" "}
-        <a href="https://mpowell773.github.io/" target="_blank">
+        <a href="https://mpowell773.github.io/" target="_blank" className="bio-link">
           here
         </a>
         . If you do head that way, thanks for checking out my stuff! I sincerely

@@ -4,6 +4,7 @@
 
 .comic-page h3 {
     text-align: center;
+    margin: 5vh auto; 
 }
 
 .comic-page img {
@@ -14,6 +15,7 @@
 
 .comic-page h4 {
     text-align: center;
+    margin: 5vh auto; 
 }
 
 .pop-up {

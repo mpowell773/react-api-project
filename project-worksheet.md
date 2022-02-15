@@ -78,7 +78,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Add Random Button for Fetch Request| H | 1.5hrs | .5hr | 
 | Add Random Logic to Update Url| H | 1.5hr| .5hr | 
 | Add Form functionality to Search Component| H | 3hrs | 1hr | 
-| Styling | H | 5hrs |  | 
+| Styling | H | 5hrs | 6h | 
 | Responsiveness| H | 3hrs |  | 
 | Total | H | 22hrs|  | 
 
