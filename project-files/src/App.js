@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import LandingPage from "./Components/LandingPage/LandingPage";
 import RandomPage from "./Components/RandomPage/RandomPage";
 import SearchPage from "./Components/SearchPage/SearchPage";
-import Bio from "./Components/Bio/Bio";
+import BioPage from "./Components/BioPage/BioPage";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import { useState, useEffect } from "react";
@@ -47,7 +47,7 @@ function App() {
               element={<RandomPage num={latestComic.num} />}
             ></Route>
             <Route path="/search" element={<SearchPage num={latestComic.num} />}></Route>
-            <Route path="/bio" element={<Bio />}></Route>
+            <Route path="/bio" element={<BioPage />}></Route>
           </Routes>
         </main>
       </div>

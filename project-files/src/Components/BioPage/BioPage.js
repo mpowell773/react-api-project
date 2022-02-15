@@ -1,4 +1,4 @@
-import "./Bio.css";
+import "./BioPage.css";
 
 const Bio = () => {
   return (
