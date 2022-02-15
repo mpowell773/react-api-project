@@ -1,16 +1,19 @@
 import "./Form.css";
 import { useState } from "react";
+import {useAlert} from 'react-alert'
 
 const Form = ({ setFormSubmit, num }) => {
   const [form, setForm] = useState("");
 
+  const alert = useAlert()
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    //logic to prevent user from submitting a fetch request if request is over latest comic number 
+    //logic to prevent user from submitting a fetch request if request is over latest comic number or if attempting negative numbers.
     if (form > num) {
-      alert(`HEY! The lastest comic is currently #${num}. Don't go pass that number. >:(`)
+      alert.show(`HEY! The lastest comic is currently #${num}. Don't go past that number. >:(`)
     } else if (form < 0) {
-      alert(`You realize that we can't go back in time right?`)
+      alert.show(`You realize that we can't go back in time right?`)
     } else {
       setFormSubmit(form);
     }

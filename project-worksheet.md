@@ -94,7 +94,8 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 ## Additional Libraries
 - React Router
-- XKCD font from github (https://github.com/ipython/xkcd-font)
+- [XKCD font from github](https://github.com/ipython/xkcd-font)
+- [react-alert](https://www.npmjs.com/package/react-alert)
 
 ## Code Snippet
 

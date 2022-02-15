@@ -3,12 +3,12 @@ import { useEffect, useState } from "react";
 import Comic from "../Comic/Comic";
 import Form from "../Form/Form";
 
-const SearchPage = ({num}) => {
+const SearchPage = ({ num }) => {
   const [comic, setComic] = useState({});
   const [formSubmit, setFormSubmit] = useState("");
 
   useEffect(() => {
-     getSearchedComic()
+    //getSearchedComic();
   }, [formSubmit]);
 
   //API Request
