@@ -8,7 +8,7 @@ const SearchPage = ({ num }) => {
   const [formSubmit, setFormSubmit] = useState("");
 
   useEffect(() => {
-    //getSearchedComic();
+    getSearchedComic();
   }, [formSubmit]);
 
   //API Request
@@ -26,7 +26,7 @@ const SearchPage = ({ num }) => {
   // Rendering page and passing properties into Comic
   return (
     <div className="search-page">
-      <h3>Search</h3>
+      <h2>Search</h2>
       <Form setFormSubmit={setFormSubmit} num={num} />
       <Comic
         alt={comic.alt}

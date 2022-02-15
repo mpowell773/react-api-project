@@ -15,15 +15,9 @@ const Comic = ({
 }) => {
   return (
     <div className="comic-page">
-      <h3>
-        {safe_title
-          ? `${safe_title} #${num}`
-          : ``}
-      </h3>
+      <h3>{safe_title ? `${safe_title} #${num}` : ``}</h3>
       <img src={img} alt={alt} title={alt} />
-      <h4>
-        Date of Publication: {month}/{day}/{year}
-      </h4>
+      <h4>{month ? `Date of Publication: ${month}/${day}/${year}` : ``}</h4>
     </div>
   );
 };
