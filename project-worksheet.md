@@ -77,7 +77,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Implement Integration of Fetch with Comic Component| H | 3hr | .5hr | 
 | Add Random Button for Fetch Request| H | 1.5hrs | .5hr | 
 | Add Random Logic to Update Url| H | 1.5hr| .5hr | 
-| Add Form functionality to Search Component| H | 3hrs |  | 
+| Add Form functionality to Search Component| H | 3hrs | 1hr | 
 | Styling | H | 5hrs |  | 
 | Responsiveness| H | 3hrs |  | 
 | Total | H | 22hrs|  | 
@@ -94,8 +94,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 ## Additional Libraries
 - React Router
-- Maybe Bootstrap for responsive functionality
-- Google Font Library
+- XKCD font from github (https://github.com/ipython/xkcd-font)
 
 ## Code Snippet
 

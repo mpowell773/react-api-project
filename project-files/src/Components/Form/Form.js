@@ -6,7 +6,15 @@ const Form = ({ setFormSubmit, num }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setFormSubmit(form);
+    //logic to prevent user from submitting a fetch request if request is over latest comic number 
+    if (form > num) {
+      alert(`HEY! The lastest comic is currently #${num}. Don't go pass that number. >:(`)
+    } else if (form < 0) {
+      alert(`You realize that we can't go back in time right?`)
+    } else {
+      setFormSubmit(form);
+    }
+    
   };
 
   const handleChange = (event) => {
@@ -17,7 +25,7 @@ const Form = ({ setFormSubmit, num }) => {
   return (
     <form onSubmit={handleSubmit}>
       <label>Type a number: </label>
-      <input type="number" value={form} onChange={handleChange} placeholder={`Max Comic: ${num}`} />
+      <input type="number" value={form} onChange={handleChange} placeholder={`Latest Comic: ${num}`} />
       <input type="submit" value="submit" />
     </form>
   );
