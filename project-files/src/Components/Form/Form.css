@@ -32,3 +32,8 @@ input[type=submit] {
 input[type=submit]:active {
     background-color: darkgrey;
 }
+
+.alert {
+    color: black;
+    font-family: xkcd-script, sans-serif;
+}

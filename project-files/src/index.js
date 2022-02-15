@@ -6,16 +6,15 @@ import reportWebVitals from "./analytic_tools/reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
 import { render } from "react-dom";
 import { transitions, positions, Provider as AlertProvider, types } from "react-alert";
-import AlertTemplate from "react-alert-template-basic";
+import AlertTemplate from "react-alert-template-mui";
 
 
 //Options for react-alert box
 const options = {
   positions: positions.MIDDLE,
-  timeout: 5000,
-  offset: '10vh',
+  timeout: 0,
+  offset: '-10vh',
   transition: transitions.SCALE,
-  type: types.ERROR
 }
 
 ReactDOM.render(

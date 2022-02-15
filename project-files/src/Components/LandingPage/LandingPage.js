@@ -1,7 +1,11 @@
 import "./LandingPage.css";
 import { useState, useEffect } from "react";
+import {useAlert} from 'react-alert'
 
 const LandingPage = ({ img, alt, safe_title }) => {
+
+  const alert = useAlert();
+
   return (
     <div className="landing-page">
       <h2>XKCD Randomizer/Searcher</h2>
@@ -20,7 +24,7 @@ const LandingPage = ({ img, alt, safe_title }) => {
       </p>
 
       <h3>{safe_title}</h3>
-      <img src={img} alt={alt} title={alt} />
+      <img src={img} alt={alt} title={alt} onClick={() => alert.show(<div className="pop-up">{alt}</div>)} />
     </div>
   );
 };
