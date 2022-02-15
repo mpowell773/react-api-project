@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import "./NavBar.css";
 
-const Navbar = () => {
+const NavBar = () => {
   return (
-    <nav>
+    <nav className="nav-bar">
       <Link to="/">
         <img src="https://i.imgur.com/V1ZisGC.png" alt="a stick figure" />{" "}
       </Link>
@@ -22,4 +22,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavBar;

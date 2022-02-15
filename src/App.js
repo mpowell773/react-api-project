@@ -4,7 +4,7 @@ import LandingPage from "./Components/LandingPage/LandingPage";
 import RandomPage from "./Components/RandomPage/RandomPage";
 import SearchPage from "./Components/SearchPage/SearchPage";
 import BioPage from "./Components/BioPage/BioPage";
-import Navbar from "./Components/Navbar/Navbar";
+import NavBar from "./Components/NavBar/NavBar";
 import Footer from "./Components/Footer/Footer";
 import { useState, useEffect } from "react";
 
@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <div className="content-wrap">
-        <Navbar />
+        <NavBar />
 
         <main>
           <Routes>

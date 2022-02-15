@@ -2,7 +2,7 @@
 /* Base Styling */
 /*--------------*/
 
-nav {
+.nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,32 +14,32 @@ nav {
     overflow: hidden;
 }
 
-nav img {
+.nav-bar img {
     height: 7vh;
     margin-left: 15px;
     margin-top: 32px; 
 }
 
-nav ul {
+.nav-bar ul {
     list-style-type: none;
     display: flex;
     margin-right: 15px;
     font-size: 1.2em;
 }
 
-nav a {
+.nav-bar a {
     padding: 0 10px;
     text-decoration: none;
     color: black;
     transition-duration: .2s;
 }
 @media (hover: hover) {
-nav a:hover {
+.nav-bar a:hover {
     color: #4e3edd;
 }
 }
 
-nav a:active {
+.nav-bar a:active {
     color: #570aaf;
     -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 }
