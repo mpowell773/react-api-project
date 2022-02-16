@@ -50,3 +50,12 @@ body {
     }
  
   }
+
+    /* Extra-Large devices (desktops, 1440px and up) */
+    @media screen and (min-width: 1440px) {
+
+        #root {
+            margin: 1vh 20vw;
+        }
+     
+      }

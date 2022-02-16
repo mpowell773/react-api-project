@@ -70,3 +70,10 @@
     
 }
 
+    /* Extra-Large devices (desktops, 1440px and up) */
+    @media screen and (min-width: 1440px) {
+        .comic-page img {
+            max-width: 50vw;
+          }
+      }
+  
