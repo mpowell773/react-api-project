@@ -17,7 +17,7 @@
 .nav-bar img {
   height: 7vh;
   margin-left: 15px;
-  margin-top: 32px;
+  margin-top: 35px;
 }
 
 .nav-bar ul {
@@ -78,4 +78,39 @@
     padding: 0 40px;
     font-size: 1.3em;
   }
+}
+
+
+/* These parameters are specifically for when phones are going landscape and to keep my home icon in the relative location */
+/* Height of Device */
+@media screen and (max-height: 856px) {
+
+    .nav-bar img {
+        margin-top: 32px;
+      }
+
+}
+
+@media screen and (max-height: 600px) {
+
+    .nav-bar img {
+        margin-top: 25px;
+      }
+
+}
+
+@media screen and (max-height: 400px) {
+
+    .nav-bar img {
+        margin-top: 20px;
+      }
+
+}
+
+@media screen and (max-height: 200px) {
+
+    .nav-bar img {
+        margin-top: 15px;
+      }
+
 }
