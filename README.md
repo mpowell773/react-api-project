@@ -63,7 +63,7 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | App | React Routing and rendering of the nav, main, footer| 
 | Intro | Stateless, Has introduction/about text for app | 
 | Random | useEffect to pull data from api, useState button toggle for useEffect, Comic component to be nested within | 
-| Search | useEffect to pull data from api, useState for form to access data and adjust api url, addiontal useState to create a toggle for when the form is submitted so fetches and rerenders Comic, Form Component nested within, Comic component nested within | 
+| Search | useEffect to pull data from api, useState for form to access data and adjust api url, additional useState to create a toggle for when the form is submitted so fetches and rerenders Comic, Form Component nested within, Comic component nested within | 
 | Comic| Many properties to fill in the title, image, etc | 
 | Form | Basic form that will take in properties from Search component so that it's actually functional | 
 
