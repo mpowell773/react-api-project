@@ -33,7 +33,7 @@ function App() {
         <main>
           <Routes>
             <Route
-              path="/"
+              path="/react-api-project"
               element={
                 <LandingPage
                   img={latestComic.img}
@@ -43,14 +43,14 @@ function App() {
               }
             ></Route>
             <Route
-              path="/random"
+              path="/react-api-project/random"
               element={<RandomPage latestComicNumber={latestComic.num} />}
             ></Route>
             <Route
-              path="/search"
+              path="/react-api-project/search"
               element={<SearchPage latestComicNumber={latestComic.num} />}
             ></Route>
-            <Route path="/bio" element={<BioPage />}></Route>
+            <Route path="/react-api-project/bio" element={<BioPage />}></Route>
           </Routes>
         </main>
       </div>
