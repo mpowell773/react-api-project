@@ -23,7 +23,7 @@
 .landing-page img {
   display: block;
   margin: 5vh auto;
-  width: 80vw;
+  max-width: 80vw;
 }
 
 
@@ -47,7 +47,7 @@
   }
 
   .landing-page img {
-    width: 70vw;
+    max-width: 70vw;
   }
 
 

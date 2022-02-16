@@ -5,6 +5,7 @@ import {useAlert} from 'react-alert'
 const LandingPage = ({ img, alt, safe_title }) => {
 
   const alert = useAlert();
+  let image = img;
 
   return (
     <div className="landing-page">

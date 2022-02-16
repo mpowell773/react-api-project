@@ -8,7 +8,7 @@
 }
 
 .comic-page img {
-    width: 80vw;
+    max-width: 80vw;
     display: block;
     margin: 0 auto;
 }
@@ -35,7 +35,7 @@
   }
 
 .comic-page img {
-    width: 70vw;
+    max-width: 70vw;
 }
 
 .comic-page h4 {
@@ -50,5 +50,6 @@
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+    
 }
 
