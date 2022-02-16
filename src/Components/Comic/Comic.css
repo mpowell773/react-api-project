@@ -50,6 +50,23 @@
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+
+
+  .comic-page h3 {
+    font-size: 1.8em;
+}
+
+.comic-page img {
+  max-width: 60vw;
+}
+
+.comic-page h4 {
+  font-size: 1.3em;
+}
+
+.pop-up {
+  font-size: 1.3em;
+}
     
 }
 
