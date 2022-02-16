@@ -80,6 +80,18 @@ input[type="submit"]:active {
   
   /* Large devices (desktops, 992px and up) */
   @media screen and (min-width: 992px) {
+    label {
+      font-size: 1.4em;
+  }
+
+  input[type="number"] {
+      font-size: 1.5em;
+  } 
+
+  input[type="submit"] {
+      font-size: 1.5em;
+      margin: 15px 5vw 0 45vw;
+  }
   
   }
   
