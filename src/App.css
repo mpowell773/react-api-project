@@ -6,27 +6,29 @@
 Useful tut on footer positioning: https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ 
 */
 
+/* W3 Schools came to save me with max-width for images... which I now finally understand!
+ */
 
 /*--------------*/
 /* Base Styling */
 /*--------------*/
 
 body {
-    background-color: #96c8a1; 
+  background-color: #96c8a1;
 }
 
 #root {
-    margin: 1vh 5vw;
-    font-family: xkcd-script, sans-serif;   
+  margin: 1vh 5vw;
+  font-family: xkcd-script, sans-serif;
 }
 
 .App {
-    position: relative;
-    min-height: 100vh;
+  position: relative;
+  min-height: 100vh;
 }
 
 .content-wrap {
-    padding-bottom: 10vh;
+  padding-bottom: 10vh;
 }
 
 /*----------------*/
@@ -35,27 +37,21 @@ body {
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-
-    #root {
-        margin: 1vh 10vw;
-    }
-
+  #root {
+    margin: 1vh 10vw;
   }
-  
-  /* Large devices (desktops, 992px and up) */
-  @media screen and (min-width: 992px) {
+}
 
-    #root {
-        margin: 1vh 15vw;
-    }
- 
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  #root {
+    margin: 1vh 15vw;
   }
+}
 
-    /* Extra-Large devices (desktops, 1440px and up) */
-    @media screen and (min-width: 1440px) {
-
-        #root {
-            margin: 1vh 20vw;
-        }
-     
-      }
+/* Extra-Large devices (desktops, 1440px and up) */
+@media screen and (min-width: 1440px) {
+  #root {
+    margin: 1vh 20vw;
+  }
+}

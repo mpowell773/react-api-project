@@ -8,7 +8,6 @@ import NavBar from "./Components/NavBar/NavBar";
 import Footer from "./Components/Footer/Footer";
 import "./App.css";
 
-
 function App() {
   const [latestComic, setLatestComic] = useState({});
 
@@ -23,7 +22,7 @@ function App() {
     fetch(url)
       .then((response) => response.json())
       .then((data) => setLatestComic(data))
-      .catch(() => console.log("no comics for you Sadge"));
+      .catch(() => console.error("Fetch failed"));
   };
 
   return (
@@ -45,9 +44,12 @@ function App() {
             ></Route>
             <Route
               path="/random"
-              element={<RandomPage num={latestComic.num} />}
+              element={<RandomPage latestComicNumber={latestComic.num} />}
             ></Route>
-            <Route path="/search" element={<SearchPage num={latestComic.num} />}></Route>
+            <Route
+              path="/search"
+              element={<SearchPage latestComicNumber={latestComic.num} />}
+            ></Route>
             <Route path="/bio" element={<BioPage />}></Route>
           </Routes>
         </main>

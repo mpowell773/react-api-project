@@ -1,23 +1,27 @@
-import "./Form.css";
 import { useState } from "react";
-import {useAlert} from 'react-alert'
+import { useAlert } from "react-alert";
+import "./Form.css";
 
-const Form = ({ setFormSubmit, num }) => {
+const Form = ({ setFormSubmit, latestComicNumber }) => {
   const [form, setForm] = useState("");
 
-  const alert = useAlert()
+  //Utilizing alert from react-alert
+  const alert = useAlert();
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    //logic to prevent user from submitting a fetch request if request is over latest comic number or if attempting negative numbers.
-    if (form > num) {
-      alert.show(<div className="alert">{`Hey! The lastest comic is currently #${num}. Don't go past that number. >:(`}</div>)
+    //Logic to prevent user from submitting a fetch request if request is over latest comic number or if attempting negative numbers.
+    if (form > latestComicNumber) {
+      alert.show(
+        <div className="alert">{`Hey! The lastest comic is currently #${latestComicNumber}. Don't go past that number. >:(`}</div>
+      );
     } else if (form < 0) {
-      alert.show(<div className="alert">{`You realize that we can't go back in time right?`}</div>)
+      alert.show(
+        <div className="alert">{`You realize that we can't go back in time right?`}</div>
+      );
     } else {
       setFormSubmit(form);
     }
-    
   };
 
   const handleChange = (event) => {
@@ -28,7 +32,12 @@ const Form = ({ setFormSubmit, num }) => {
   return (
     <form onSubmit={handleSubmit}>
       <label>Type a number: </label>
-      <input type="number" value={form} onChange={handleChange} placeholder={`Latest Comic: ${num}`} />
+      <input
+        type="number"
+        value={form}
+        onChange={handleChange}
+        placeholder={`Latest Comic: ${latestComicNumber}`}
+      />
       <input type="submit" value="submit" />
     </form>
   );

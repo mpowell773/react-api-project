@@ -6,7 +6,7 @@ const Footer = () => {
       <h5>
         Coded by Matt Powell. Comics are{" "}
         <a className="link" href="https://xkcd.com/" target="_blank">
-          XKCD
+          xkcd
         </a>{" "}
         by Randall Munroe.
       </h5>

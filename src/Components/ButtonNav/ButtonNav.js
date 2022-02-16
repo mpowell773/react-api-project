@@ -1,7 +1,7 @@
 import "./ButtonNav.css";
 import { useAlert } from "react-alert";
 
-const ButtonNav = ({ formSubmit, setFormSubmit, num }) => {
+const ButtonNav = ({ formSubmit, setFormSubmit, latestComicNumber }) => {
  
   const alert = useAlert();
 
@@ -19,7 +19,7 @@ const ButtonNav = ({ formSubmit, setFormSubmit, num }) => {
   };
 
   const handleAddOneForm = () => {
-    if (formSubmit >= num) {
+    if (formSubmit >= latestComicNumber) {
       //logic to check if user requests going past max limit of comics
       alert.show(
         <div className="alert">{`Randall has not yet written this comic, but he normally updates on Monday, Wednesday, and Friday
@@ -36,7 +36,7 @@ const ButtonNav = ({ formSubmit, setFormSubmit, num }) => {
       <button onClick={() => setFormSubmit(1)}>{"|<"}</button>
       <button onClick={() => handleMinusOneForm()}>{"< Prev"}</button>
       <button onClick={() => handleAddOneForm()}>{"Next >"}</button>
-      <button onClick={() => setFormSubmit(num)}>{">|"}</button>
+      <button onClick={() => setFormSubmit(latestComicNumber)}>{">|"}</button>
     </nav>
   );
 };

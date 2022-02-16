@@ -4,10 +4,11 @@ import Form from "../Form/Form";
 import ButtonNav from "../ButtonNav/ButtonNav";
 import "./SearchPage.css";
 
-const SearchPage = ({ num }) => {
+const SearchPage = ({ latestComicNumber }) => {
   const [comic, setComic] = useState({});
   const [formSubmit, setFormSubmit] = useState("");
 
+  //Rerender Comic on each formSubmit
   useEffect(() => {
     getSearchedComic();
   }, [formSubmit]);
@@ -19,14 +20,17 @@ const SearchPage = ({ num }) => {
     fetch(url)
       .then((response) => response.json())
       .then((data) => setComic(data))
-      .catch(() => console.log("no comics for you Sadge"));
+      .catch(() => console.error("Fetch failed"));
   };
 
-  // Rendering page and passing properties into Comic
+  //Rendering page and passing properties into Comic. On a side note, Prettier really wanted my ternary on Line 47 to be spread out in a horrically unreadable manner. I refactored and hopefully it's easier to read.
   return (
     <div className="search-page">
       <h2>The Search Page</h2>
-      <Form setFormSubmit={setFormSubmit} num={num} />
+      <Form
+        setFormSubmit={setFormSubmit}
+        latestComicNumber={latestComicNumber}
+      />
       <Comic
         alt={comic.alt}
         day={comic.day}
@@ -44,11 +48,9 @@ const SearchPage = ({ num }) => {
         <ButtonNav
           formSubmit={formSubmit}
           setFormSubmit={setFormSubmit}
-          num={num}
+          latestComicNumber={latestComicNumber}
         />
-      ) : (
-        ""
-      )}
+      ) : ("")}
     </div>
   );
 };

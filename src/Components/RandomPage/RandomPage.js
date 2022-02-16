@@ -1,32 +1,31 @@
-import "./RandomPage.css";
 import { useEffect, useState } from "react";
 import Comic from "../Comic/Comic";
+import "./RandomPage.css";
 
-const RandomPage = ({num}) => {
+const RandomPage = ({ latestComicNumber }) => {
   const [comic, setComic] = useState({});
-  const [toggle, setToggle] = useState (true);
+  const [toggle, setToggle] = useState(true);
 
+  //Utilizing a toggle set up in useState for the useEffect to refresh the page with the button
   useEffect(() => {
-    getRandomComic()
+    getRandomComic();
   }, [toggle]);
 
   //API Request
   const getRandomComic = () => {
     //prop from latest comic sets max number, if api fetch failed, number is set statically to 2580
-    let maxNumber = num ? num : 2580;
-    let randomNumber = Math.floor(Math.random() * maxNumber); 
+    let maxNumber = latestComicNumber ? latestComicNumber : 2580;
+    let randomNumber = Math.floor(Math.random() * maxNumber);
 
     const url = `https://xkcd.now.sh?comic=${randomNumber}`;
 
     fetch(url)
       .then((response) => response.json())
       .then((data) => setComic(data))
-      .catch(() => console.log("no comics for you Sadge"));
+      .catch(() => console.error("Fetch failed"));
   };
 
-  console.log(comic);
-
-// Rendering page and passing properties into Comic
+  //Rendering page and passing properties into Comic
   return (
     <div className="random-page">
       <h2>The Random Page</h2>
@@ -49,6 +48,3 @@ const RandomPage = ({num}) => {
 };
 
 export default RandomPage;
-
-
-//xkcd 1513 :(
