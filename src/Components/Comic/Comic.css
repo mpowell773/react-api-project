@@ -23,3 +23,32 @@
     font-family: xkcd-script, sans-serif;
 }
 
+/*----------------*/
+/* Responsiveness */
+/*----------------*/
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+
+  .comic-page h3 {
+      font-size: 1.5em;
+  }
+
+.comic-page img {
+    width: 70vw;
+}
+
+.comic-page h4 {
+    font-size: 1.2em;
+}
+
+.pop-up {
+    font-size: 1.2em;
+}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+}
+
