@@ -1,9 +1,10 @@
-/*--------------*/
+/*-----------*/
 /* Reference */
-/*--------------*/
+/*-----------*/
 
 /* 
-Useful tut on footer positioning: https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
+Useful tut on footer positioning: https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ 
+*/
 
 
 /*--------------*/
@@ -28,4 +29,20 @@ body {
     padding-bottom: 10vh;
 }
 
+/*----------------*/
+/* Responsiveness */
+/*----------------*/
 
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+
+    #root {
+        margin: 1vh 10vw;
+    }
+
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media screen and (min-width: 992px) {
+ 
+  }

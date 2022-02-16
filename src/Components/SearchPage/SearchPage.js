@@ -1,8 +1,8 @@
-import "./SearchPage.css";
 import { useEffect, useState } from "react";
 import Comic from "../Comic/Comic";
 import Form from "../Form/Form";
 import ButtonNav from "../ButtonNav/ButtonNav";
+import "./SearchPage.css";
 
 const SearchPage = ({ num }) => {
   const [comic, setComic] = useState({});

@@ -25,3 +25,36 @@
   margin: 5vh auto;
   width: 80vw;
 }
+
+
+/*----------------*/
+/* Responsiveness */
+/*----------------*/
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+
+  .landing-page h2 {
+    font-size: 2em;
+  }
+
+  .landing-page h3 {
+    font-size: 1.5em;
+  }
+
+  .landing-page p {
+    font-size: 1.2em;
+  }
+
+  .landing-page img {
+    width: 70vw;
+  }
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+
+}
+

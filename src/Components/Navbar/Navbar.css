@@ -43,3 +43,32 @@
     color: #570aaf;
     -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 }
+
+
+/*----------------*/
+/* Responsiveness */
+/*----------------*/
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+
+.nav-bar img {
+    margin-left: 20px;
+}
+
+.nav-bar ul {
+    margin-right: 20px;
+}
+
+.nav-bar a {
+    padding: 0 30px;
+    font-size: 1.2em;
+}
+  
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media screen and (min-width: 992px) {
+  
+  }
+  
