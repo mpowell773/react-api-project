@@ -2,6 +2,15 @@ form {
   margin-top: 5vh;
 }
 
+input:focus {
+    outline-color: #65886c;
+  }
+  
+  textarea:focus {
+    outline-color: #65886c;
+  }
+
+
 input[type="number"] {
   border: none;
   border-bottom: 2px solid #65886c;
@@ -14,6 +23,7 @@ input[type="number"]:focus-visible {
   border-radius: 5px;
   background-color: rgb(240, 240, 240);
 }
+
 
 input[type="submit"] {
   display: block;

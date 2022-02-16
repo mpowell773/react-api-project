@@ -17,7 +17,7 @@ const Bio = () => {
       <p>
         This little web app was built during my time at General Assembly with
         the intent of using both the framework React and fetching data from an
-        API.
+        API. Did you know XKCD has an API? I didn't until I started working on this project!
       </p>
       <p>
         If you would like to see more of my work, click{" "}

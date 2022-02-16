@@ -22,7 +22,6 @@ const SearchPage = ({ num }) => {
       .catch(() => console.log("no comics for you Sadge"));
   };
 
-
   // Rendering page and passing properties into Comic
   return (
     <div className="search-page">
@@ -41,11 +40,15 @@ const SearchPage = ({ num }) => {
         transcript={comic.transcript}
         year={comic.year}
       />
-      <ButtonNav
-        formSubmit={formSubmit}
-        setFormSubmit={setFormSubmit}
-        num={num}
-      />
+      {comic.title ? (
+        <ButtonNav
+          formSubmit={formSubmit}
+          setFormSubmit={setFormSubmit}
+          num={num}
+        />
+      ) : (
+        ""
+      )}
     </div>
   );
 };
