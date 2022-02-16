@@ -1,3 +1,7 @@
+/*--------------*/
+/* Base Styling */
+/*--------------*/
+
 .search-page {
     margin: 5vh 0;
     background-color: white;
@@ -10,3 +14,22 @@
     text-align: center;
     text-decoration: underline;
   }
+
+/*----------------*/
+/* Responsiveness */
+/*----------------*/
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+
+.search-page h2 {
+  font-size: 2em;
+}
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+
+}

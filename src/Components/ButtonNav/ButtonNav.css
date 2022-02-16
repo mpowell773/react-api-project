@@ -31,3 +31,22 @@
 .button-nav button:active {
   background-color: darkgrey;
 }
+
+/*----------------*/
+/* Responsiveness */
+/*----------------*/
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+
+    .button-nav button {
+        font-size: 1.3em;
+    }
+
+
+}
+  /* Large devices (desktops, 992px and up) */
+  @media screen and (min-width: 992px) {
+  
+  }
+

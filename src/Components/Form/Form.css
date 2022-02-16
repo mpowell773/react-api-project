@@ -53,3 +53,33 @@ input[type="submit"]:active {
   color: black;
   font-family: xkcd-script, sans-serif;
 }
+
+
+/*----------------*/
+/* Responsiveness */
+/*----------------*/
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+
+    label {
+        font-size: 1.2em;
+    }
+
+    input[type="number"] {
+        font-size: 1.3em;
+    } 
+
+    input[type="submit"] {
+        font-size: 1.3em;
+        margin: 15px 5vw 0 45vw;
+    }
+
+  
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media screen and (min-width: 992px) {
+  
+  }
+  
