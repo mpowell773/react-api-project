@@ -7,7 +7,10 @@
 
 ## Project Description
 
-I am using XKCD's api to pull a random comic on the main page. There will be a subsequent tab where you can search by number for a comic. Post MVP, After the fetch to XKCD, my plan is to fetch from GIPHY a random GIF tied to the title of the XKCD comic.
+I am using xkcd's API to pull a random comic on the main page. There will be a subsequent tab where you can search by number for a comic. Post MVP, After the fetch to xkcd, my plan is to fetch from GIPHY a random GIF tied to the title of the xkcd comic.
+
+*Edit*
+While working on this project, I realized that xkcd's normal website is not at all mobile-friendly, so I really pressed down on making a mobile-friendly variation of the site. While my post-MVP of fetching an image from GIPHY is still on the table for the future, I decided to not pursue it for the time being.
 
 ## API
 
@@ -79,17 +82,27 @@ Based on the initial logic defined in the previous sections try and breakdown th
 | Add Random Logic to Update Url| H | 1.5hr| .5hr | 
 | Add Form functionality to Search Component| H | 3hrs | 1hr | 
 | Styling | H | 5hrs | 6h | 
-| Responsiveness| H | 3hrs |  | 
-| Total | H | 22hrs|  | 
+| Responsiveness| H | 3hrs | 4.5hrs | 
+| Total | H | 22hrs| 20.5hrs | 
 
-### Post-MVP
+
+### Original Post-MVP
 | Component | Priority | Estimated Time | Actual Time | 
 | --- | :---: |  :---: | :---: | 
-| Add Giphy API and Fetch Image | H | 2hrs | | 
-| Add Logic so Giphy Waits and Then Fetches Random Image Based on Title| H | 4hrs |  | 
-| Dynamic CSS| M | 3hrs |  | 
+| Add Giphy API and Fetch Image | L | 2hrs | 0hrs | 
+| Add Logic so Giphy Waits and Then Fetches Random Image Based on Title| L | 4hrs | 0hrs  | 
+| Dynamic CSS| M | 3hrs | 2hrs | 
+| Total | H | 9hrs| 2hrs  | 
 
-| Total | H | 9hrs|  | 
+### Updated Post-MVP
+
+| Component | Priority | Estimated Time | Actual Time | 
+| --- | :---: |  :---: | :---: | 
+| Have Hover Text Pop Out on Touch Devices| H | 2hrs| 2.5hrs | 
+| Create BioPage| H | 1hr | 1hr | 
+| Add Button Navigation to Search Page | H | 3hr | 2hrs | 
+| Write Logic to Form to  Limit Searches| M | 2hr | 2hr | 
+| Total | H | 8hrs| 7.5hrs | 
 
 
 ## Additional Libraries
@@ -99,10 +112,33 @@ Based on the initial logic defined in the previous sections try and breakdown th
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
+I utilized a prop that I passed down from App.js all the way to my Form component. This prop, latestComicNumber, is the most recent comic number that has been posted. I then utilized some relatively simple conditional logic so that the user can't send a fetch request that will be instantly denied. They are alerted if they are out of bounds. Instead of normal alerts, I used a package called react-alerts.
 
+```js
+  const handleSubmit = (event) => {
+    event.preventDefault();
+   
+    if (form > latestComicNumber) {
+      alert.show(
+        <div className="alert">{`Hey! The lastest comic is currently #${latestComicNumber}. Don't go past that number. >:(`}</div>
+      );
+    } else if (form < 0) {
+      alert.show(
+        <div className="alert">{`You realize that we can't go back in time right?`}</div>
+      );
+    } else {
+      setFormSubmit(form);
+    }
+  };
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
-```
+
+## Additional Resources/References
+
+#### Footer Positioning
+
+Useful tut on footer positioning: https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ 
+
+#### Image Responsiveness
+
+W3 Schools came to save me with max-width for images... which I now finally understand!
+ 

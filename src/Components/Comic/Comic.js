@@ -22,7 +22,7 @@ const Comic = ({
         src={img}
         alt={alt}
         title={alt}
-        onClick={() => alert.show(<div className="pop-up">{alt}</div>)}
+        onClick={() => alert.show(<span className="pop-up">{alt}</span>)}
       />
       <h4>{month ? `Date of Publication: ${month}/${day}/${year}` : ``}</h4>
     </div>

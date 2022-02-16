@@ -3,24 +3,24 @@
 /*--------------*/
 
 .comic-page h3 {
-    text-align: center;
-    margin: 5vh auto; 
+  text-align: center;
+  margin: 5vh auto;
 }
 
 .comic-page img {
-    max-width: 80vw;
-    display: block;
-    margin: 0 auto;
+  max-width: 80vw;
+  display: block;
+  margin: 0 auto;
 }
 
 .comic-page h4 {
-    text-align: center;
-    margin: 5vh auto; 
+  text-align: center;
+  margin: 5vh auto;
 }
 
 .pop-up {
-    color: black;
-    font-family: xkcd-script, sans-serif;
+  color: black;
+  font-family: xkcd-script, sans-serif;
 }
 
 /*----------------*/
@@ -29,51 +29,45 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-
   .comic-page h3 {
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
 
-.comic-page img {
+  .comic-page img {
     max-width: 70vw;
-}
+  }
 
-.comic-page h4 {
+  .comic-page h4 {
     font-size: 1.2em;
-}
+  }
 
-.pop-up {
+  .pop-up {
     font-size: 1.2em;
-}
-
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-
-
   .comic-page h3 {
     font-size: 1.8em;
+  }
+
+  .comic-page img {
+    max-width: 60vw;
+  }
+
+  .comic-page h4 {
+    font-size: 1.3em;
+  }
+
+  .pop-up {
+    font-size: 1.3em;
+  }
 }
 
-.comic-page img {
-  max-width: 60vw;
+/* Extra-Large devices (desktops, 1440px and up) */
+@media screen and (min-width: 1440px) {
+  .comic-page img {
+    max-width: 50vw;
+  }
 }
-
-.comic-page h4 {
-  font-size: 1.3em;
-}
-
-.pop-up {
-  font-size: 1.3em;
-}
-    
-}
-
-    /* Extra-Large devices (desktops, 1440px and up) */
-    @media screen and (min-width: 1440px) {
-        .comic-page img {
-            max-width: 50vw;
-          }
-      }
-  

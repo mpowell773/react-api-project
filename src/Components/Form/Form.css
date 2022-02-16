@@ -3,13 +3,12 @@ form {
 }
 
 input:focus {
-    outline-color: #65886c;
-  }
-  
-  textarea:focus {
-    outline-color: #65886c;
-  }
+  outline-color: #65886c;
+}
 
+textarea:focus {
+  outline-color: #65886c;
+}
 
 input[type="number"] {
   border: none;
@@ -23,7 +22,6 @@ input[type="number"]:focus-visible {
   border-radius: 5px;
   background-color: rgb(240, 240, 240);
 }
-
 
 input[type="submit"] {
   display: block;
@@ -54,44 +52,38 @@ input[type="submit"]:active {
   font-family: xkcd-script, sans-serif;
 }
 
-
 /*----------------*/
 /* Responsiveness */
 /*----------------*/
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-
-    label {
-        font-size: 1.2em;
-    }
-
-    input[type="number"] {
-        font-size: 1.3em;
-    } 
-
-    input[type="submit"] {
-        font-size: 1.3em;
-        margin: 15px 5vw 0 45vw;
-    }
-
-  
-  }
-  
-  /* Large devices (desktops, 992px and up) */
-  @media screen and (min-width: 992px) {
-    label {
-      font-size: 1.4em;
+  label {
+    font-size: 1.2em;
   }
 
   input[type="number"] {
-      font-size: 1.5em;
-  } 
+    font-size: 1.3em;
+  }
 
   input[type="submit"] {
-      font-size: 1.5em;
-      margin: 15px 5vw 0 45vw;
+    font-size: 1.3em;
+    margin: 15px 5vw 0 45vw;
   }
-  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  label {
+    font-size: 1.4em;
   }
-  
+
+  input[type="number"] {
+    font-size: 1.5em;
+  }
+
+  input[type="submit"] {
+    font-size: 1.5em;
+    margin: 15px 5vw 0 45vw;
+  }
+}

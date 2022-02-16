@@ -27,7 +27,7 @@ const LandingPage = ({ img, alt, safe_title }) => {
         src={img}
         alt={alt}
         title={alt}
-        onClick={() => alert.show(<div className="pop-up">{alt}</div>)}
+        onClick={() => alert.show(<span className="pop-up">{alt}</span>)}
       />
     </div>
   );

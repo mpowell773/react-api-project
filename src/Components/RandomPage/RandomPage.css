@@ -50,29 +50,22 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
+  .random-page h2 {
+    font-size: 2em;
+  }
 
-.random-page h2 {
-  font-size: 2em;
-}
-
-.random-page button {
-  font-size: 1.5em;
-}
-
+  .random-page button {
+    font-size: 1.5em;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+  .random-page h2 {
+    font-size: 2.3em;
+  }
 
-
-.random-page h2 {
-  font-size: 2.3em;
+  .random-page button {
+    font-size: 1.8em;
+  }
 }
-
-.random-page button {
-  font-size: 1.8em;
-}
-
-    
-}
-

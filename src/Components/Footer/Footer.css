@@ -39,15 +39,14 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
-    .footer h5 {
-        font-size: 1em;
-    }
+  .footer h5 {
+    font-size: 1em;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
   .footer h5 {
     font-size: 1.1em;
-}
-
+  }
 }
