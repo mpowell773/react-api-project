@@ -22,7 +22,6 @@ const SearchPage = ({ num }) => {
       .catch(() => console.log("no comics for you Sadge"));
   };
 
-  console.log(comic);
 
   // Rendering page and passing properties into Comic
   return (

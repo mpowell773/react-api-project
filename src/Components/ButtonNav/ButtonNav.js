@@ -1,36 +1,42 @@
 import "./ButtonNav.css";
-import {useAlert} from 'react-alert'
+import { useAlert } from "react-alert";
 
-
-const ButtonNav = ({formSubmit, setFormSubmit, num}) => {
-  //copying the number from form submit so that we can more easily manipulate it
-  let copiedNumber = formSubmit;
-  const alert = useAlert()
-
+const ButtonNav = ({ formSubmit, setFormSubmit, num }) => {
+ 
+  const alert = useAlert();
 
   //handles to manipulate the current formSubmit usestate
   const handleMinusOneForm = () => {
-    if (formSubmit < 1) {
-      alert.show(<div className="alert">{`You realize that we can't go back in time right?`}</div>)
-    } else {  
-    const difference = copiedNumber - 1;
-    console.log('after', difference)
-    setFormSubmit(difference);
+    //logic to check if user requests going too far back
+    if (formSubmit <= 1) {
+      alert.show(
+        <div className="alert">{`You are attempting to visit a comic that simply doesn't exist.`}</div>
+      );
+    } else {
+      const difference = formSubmit - 1;
+      setFormSubmit(difference);
     }
-  }
+  };
 
   const handleAddOneForm = () => {
-    const sum = copiedNumber + 1;
-    setFormSubmit(sum);
-  }
+    if (formSubmit >= num) {
+      //logic to check if user requests going past max limit of comics
+      alert.show(
+        <div className="alert">{`Randall has not yet written this comic, but he normally updates on Monday, Wednesday, and Friday
+      !`}</div>
+      );
+    } else {
+      const sum = formSubmit + 1;
+      setFormSubmit(sum);
+    }
+  };
 
   return (
     <nav className="button-nav">
-      <button onClick={() => setFormSubmit(1)}>{'|<'}</button>
-      <button onClick={() => handleMinusOneForm()}>{'<'}</button>
-      <button onClick={() => handleAddOneForm()}>{'>'}</button>
-      <button onClick={() => setFormSubmit(num)}>{'>|'}</button>
-
+      <button onClick={() => setFormSubmit(1)}>{"|<"}</button>
+      <button onClick={() => handleMinusOneForm()}>{"<"}</button>
+      <button onClick={() => handleAddOneForm()}>{">"}</button>
+      <button onClick={() => setFormSubmit(num)}>{">|"}</button>
     </nav>
   );
 };
