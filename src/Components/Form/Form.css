@@ -1,39 +1,45 @@
 form {
-    margin-top: 5vh;
+  margin-top: 5vh;
 }
 
-input[type=number] {
-    border: none;
-    border-bottom: 2px solid #65886c;
-    padding: 2px 0 2px 3px;
-    font-family: xkcd-script, sans-serif;
-    font-size: 1.1em;
-    transition-duration: .5s;
-
+input[type="number"] {
+  border: none;
+  border-bottom: 2px solid #65886c;
+  padding: 2px 0 2px 3px;
+  font-family: xkcd-script, sans-serif;
+  font-size: 1.1em;
+  transition-duration: 0.5s;
 }
-input[type=number]:focus-visible {
-    border-radius: 5px;
-    background-color: rgb(240, 240, 240);
-}
-
-input[type=submit] {
-    display: block;
-    margin: 15px 5vw 0 50vw;
-
-    font-size: 1.1em;
-    font-family: xkcd-script, sans-serif;
-
-    background-color: rgb(240, 240, 240);
-    border-radius: 5px;
-    border: 2px solid #65886c;
-    transition-duration: .1s;
+input[type="number"]:focus-visible {
+  border-radius: 5px;
+  background-color: rgb(240, 240, 240);
 }
 
-input[type=submit]:active {
-    background-color: darkgrey;
+input[type="submit"] {
+  display: block;
+  margin: 15px 5vw 0 50vw;
+
+  font-size: 1.1em;
+  font-family: xkcd-script, sans-serif;
+
+  background-color: rgb(240, 240, 240);
+  border-radius: 5px;
+  border: 2px solid #65886c;
+  transition-duration: 0.1s;
+}
+
+@media (hover: hover) {
+  input[type="submit"]:hover {
+    transform: scale(1.2) perspective(1px);
+    cursor: pointer;
+  }
+}
+
+input[type="submit"]:active {
+  background-color: darkgrey;
 }
 
 .alert {
-    color: black;
-    font-family: xkcd-script, sans-serif;
+  color: black;
+  font-family: xkcd-script, sans-serif;
 }

@@ -34,8 +34,8 @@ const ButtonNav = ({ formSubmit, setFormSubmit, num }) => {
   return (
     <nav className="button-nav">
       <button onClick={() => setFormSubmit(1)}>{"|<"}</button>
-      <button onClick={() => handleMinusOneForm()}>{"<"}</button>
-      <button onClick={() => handleAddOneForm()}>{">"}</button>
+      <button onClick={() => handleMinusOneForm()}>{"< Prev"}</button>
+      <button onClick={() => handleAddOneForm()}>{"Next >"}</button>
       <button onClick={() => setFormSubmit(num)}>{">|"}</button>
     </nav>
   );
