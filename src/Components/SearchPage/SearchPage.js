@@ -17,10 +17,15 @@ const SearchPage = ({ latestComicNumber }) => {
   const getSearchedComic = () => {
     const url = `https://xkcd.now.sh?comic=${formSubmit}`;
 
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => setComic(data))
-      .catch(() => console.error("Fetch failed"));
+    //Conditional logic to check if formSubmit is empty. If so, do not fetch
+    if (formSubmit === "") {
+       return null;
+    } else {
+        fetch(url)
+        .then((response) => response.json())
+        .then((data) => setComic(data))
+        .catch(() => console.error("Fetch failed"));
+    }
   };
 
   //Rendering page and passing properties into Comic. On a side note, Prettier really wanted my ternary on Line 47 to be spread out in a horrically unreadable manner. I refactored and hopefully it's easier to read.
