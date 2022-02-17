@@ -7,6 +7,7 @@ import "./SearchPage.css";
 const SearchPage = ({ latestComicNumber }) => {
   const [comic, setComic] = useState({});
   const [formSubmit, setFormSubmit] = useState("");
+  const [error, setError] = useState(null);
 
   //Rerender Comic on each formSubmit
   useEffect(() => {
@@ -24,9 +25,14 @@ const SearchPage = ({ latestComicNumber }) => {
         fetch(url)
         .then((response) => response.json())
         .then((data) => setComic(data))
-        .catch(() => console.error("Fetch failed"));
+        .catch(() => setError('API has failed. Please try again later.'));
     }
   };
+
+  //if API fails, useState updates and error renders
+  if (error) {
+    return <h1>{error}</h1>;
+  }
 
   //Rendering page and passing properties into Comic. On a side note, Prettier really wanted my ternary on Line 47 to be spread out in a horrically unreadable manner. I refactored and hopefully it's easier to read. Additionally, I have passed down all the object keys in case I find scenarios where I will need to update my Comic component.
   return (

@@ -5,6 +5,7 @@ import "./RandomPage.css";
 const RandomPage = ({ latestComicNumber }) => {
   const [comic, setComic] = useState({});
   const [toggle, setToggle] = useState(true);
+  const [error, setError] = useState(null);
 
   //Utilizing a toggle set up in useState for the useEffect to refresh the page with the button
   useEffect(() => {
@@ -22,8 +23,13 @@ const RandomPage = ({ latestComicNumber }) => {
     fetch(url)
       .then((response) => response.json())
       .then((data) => setComic(data))
-      .catch(() => console.error("Fetch failed"));
+      .catch(() => setError("API has failed. Please try again later"));
   };
+
+  //if API fails, useState updates and error renders
+  if (error) {
+    return <h1>{error}</h1>;
+  }
 
   //Rendering page and passing properties into Comic
   return (
