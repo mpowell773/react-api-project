@@ -70,6 +70,11 @@ input[type="submit"]:active {
     font-size: 1.3em;
     margin: 15px 5vw 0 45vw;
   }
+
+  .alert {
+   font-size: 1.2em;
+  }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -84,6 +89,18 @@ input[type="submit"]:active {
 
   input[type="submit"] {
     font-size: 1.5em;
-    margin: 15px 5vw 0 45vw;
+    margin: 15px 5vw 0 40vw;
+  }
+
+  .alert {
+    font-size: 1.3em;
+   }
+}
+
+/* Extra-Large devices (desktops, 1440px and up) */
+@media screen and (min-width: 1440px) {
+  input[type="submit"] {
+    font-size: 1.5em;
+    margin: 15px 5vw 0 35vw;
   }
 }
