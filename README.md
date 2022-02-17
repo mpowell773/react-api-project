@@ -141,4 +141,8 @@ Useful tut on footer positioning: https://www.freecodecamp.org/news/how-to-keep-
 #### Image Responsiveness
 
 W3 Schools came to save me with max-width for images... which I now finally understand!
+
+#### Local Fonts
+ 
+As shown above, I cloned down a repo that had created a font with Randall Munroe's handwriting. Here's the tutorial I followed to make it all work in my project: https://dev.to/annequinkenstein/adding-fonts-to-create-react-app-3ed7
  

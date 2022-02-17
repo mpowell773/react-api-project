@@ -6,7 +6,7 @@ const Bio = () => {
       <h2>My Bio</h2>
       <p>
         So you decided to click on the bio link, eh? Well then, here's a little
-        snippet about me, the coder Matt, and not Randall who is the creator of
+        snippet about me, the coder Matt, and not Randall, the creator of
         xkcd.
       </p>
       <p>

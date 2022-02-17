@@ -10,15 +10,15 @@ const LandingPage = ({ img, alt, safe_title }) => {
       <h2>XKCD Randomizer/Searcher</h2>
       <p>
         Hello and welcome! Let's totally ignore that there are already search
-        and randomize functionalities already built into the xkcd website.{" "}
+        and randomize functionalities built into the xkcd website.{" "}
       </p>
       <p>
         Now that you have suspended your belief, you can use the following tabs
-        above to either gander at a random xkcd or you can search by number for
-        your favorite xkcd. Otherwise enjoy the latest comic below!
+        above to gander at a random xkcd comic or search by number for
+        your favorite comic. Otherwise, enjoy the latest release below!
       </p>
       <p>
-        This website was built with the power of React. For the people, and mostly for a
+        This website was built with the power of React. For the people... and mostly for a
         project.
       </p>
 
