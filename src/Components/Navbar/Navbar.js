@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import icon from "../../images/transparent-icon.png"
 import "./NavBar.css";
 
 const NavBar = () => {
   return (
     <nav className="nav-bar">
       <Link to="/react-api-project">
-        <img src="https://i.imgur.com/V1ZisGC.png" alt="a stick figure" />{" "}
+        <img src={icon} alt="a stick figure" />{" "}
       </Link>
       <ul>
         <Link to="/react-api-project/random">

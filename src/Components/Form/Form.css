@@ -16,9 +16,7 @@ input[type="number"] {
   padding: 2px 0 2px 3px;
   font-family: xkcd-script, sans-serif;
   font-size: 1.1em;
-  transition-duration: .5s;
-  
-  
+  transition-duration: 0.5s;
 }
 input[type="number"]:focus-visible {
   border-radius: 5px;
@@ -75,9 +73,8 @@ input[type="submit"]:active {
   }
 
   .alert {
-   font-size: 1.2em;
+    font-size: 1.2em;
   }
-
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -97,7 +94,7 @@ input[type="submit"]:active {
 
   .alert {
     font-size: 1.3em;
-   }
+  }
 }
 
 /* Extra-Large devices (desktops, 1440px and up) */

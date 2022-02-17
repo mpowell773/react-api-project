@@ -146,3 +146,9 @@ W3 Schools came to save me with max-width for images... which I now finally unde
  
 As shown above, I cloned down a repo that had created a font with Randall Munroe's handwriting. Here's the tutorial I followed to make it all work in my project: https://dev.to/annequinkenstein/adding-fonts-to-create-react-app-3ed7
  
+
+ #### Image Filters
+
+ I found a great stack overflow on how to change image color via filter. Link: https://stackoverflow.com/questions/7415872/change-color-of-png-image-via-css
+
+ Additionally, within this thread, there was an amazing tool posted for generating a filter via hex-code. Link: https://codepen.io/sosuke/pen/Pjoqqp
