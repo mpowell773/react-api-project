@@ -20,10 +20,10 @@
 
 .comic-page h5 {
   text-align: center;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
-.comic-page a{
+.comic-page a {
   text-decoration: none;
   color: rgb(29, 1, 131);
   transition-duration: 0.3s;
@@ -63,8 +63,6 @@
   .pop-up {
     font-size: 1.2em;
   }
-
-
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -88,8 +86,6 @@
   .pop-up {
     font-size: 1.3em;
   }
-
- 
 }
 
 /* Extra-Large devices (desktops, 1440px and up) */

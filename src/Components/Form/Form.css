@@ -1,13 +1,13 @@
+/*--------------*/
+/* Base Styling */
+/*--------------*/
+
 form {
   margin-top: 5vh;
 }
 
 input:focus {
-  outline-color: #65886c;
-}
-
-textarea:focus {
-  outline-color: #65886c;
+  outline: none;
 }
 
 input[type="number"] {
@@ -16,11 +16,14 @@ input[type="number"] {
   padding: 2px 0 2px 3px;
   font-family: xkcd-script, sans-serif;
   font-size: 1.1em;
-  transition-duration: 0.5s;
+  transition-duration: .5s;
+  
+  
 }
 input[type="number"]:focus-visible {
   border-radius: 5px;
   background-color: rgb(240, 240, 240);
+  border: 2px solid rgb(142, 192, 175);
 }
 
 input[type="submit"] {

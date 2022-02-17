@@ -31,7 +31,7 @@ const SearchPage = ({ latestComicNumber }) => {
 
   //if API fails, useState updates and error renders
   if (error) {
-    return <h1>{error}</h1>;
+    return <h1 className="search-page">{error}</h1>;
   }
 
   //Rendering page and passing properties into Comic. On a side note, Prettier really wanted my ternary on Line 47 to be spread out in a horrically unreadable manner. I refactored and hopefully it's easier to read. Additionally, I have passed down all the object keys in case I find scenarios where I will need to update my Comic component.

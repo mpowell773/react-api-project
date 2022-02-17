@@ -23,12 +23,12 @@ const RandomPage = ({ latestComicNumber }) => {
     fetch(url)
       .then((response) => response.json())
       .then((data) => setComic(data))
-      .catch(() => setError("API has failed. Please try again later"));
+      .catch(() => setError("API has failed. Please try again later."));
   };
 
   //if API fails, useState updates and error renders
   if (error) {
-    return <h1>{error}</h1>;
+    return <h1 className="random-page">{error}</h1>;
   }
 
   //Rendering page and passing properties into Comic

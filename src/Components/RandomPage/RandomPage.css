@@ -10,6 +10,10 @@
   padding: 2vh 5vw;
 }
 
+h1 {
+  text-align: center;
+}
+
 .random-page h2 {
   text-align: center;
   text-decoration: underline;
