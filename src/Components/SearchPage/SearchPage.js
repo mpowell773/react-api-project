@@ -28,7 +28,7 @@ const SearchPage = ({ latestComicNumber }) => {
     }
   };
 
-  //Rendering page and passing properties into Comic. On a side note, Prettier really wanted my ternary on Line 47 to be spread out in a horrically unreadable manner. I refactored and hopefully it's easier to read.
+  //Rendering page and passing properties into Comic. On a side note, Prettier really wanted my ternary on Line 47 to be spread out in a horrically unreadable manner. I refactored and hopefully it's easier to read. Additionally, I have passed down all the object keys in case I find scenarios where I will need to update my Comic component.
   return (
     <div className="search-page">
       <h2>The Search Page</h2>

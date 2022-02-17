@@ -18,6 +18,21 @@
   margin: 5vh auto;
 }
 
+.comic-page h5 {
+  text-align: center;
+  font-size: .8em;
+}
+
+.comic-page a{
+  text-decoration: none;
+  color: rgb(29, 1, 131);
+  transition-duration: 0.3s;
+}
+
+.comic-page a:hover {
+  color: #4e3edd;
+}
+
 .pop-up {
   color: black;
   font-family: xkcd-script, sans-serif;
@@ -41,9 +56,15 @@
     font-size: 1.2em;
   }
 
+  .comic-page h5 {
+    font-size: 1em;
+  }
+
   .pop-up {
     font-size: 1.2em;
   }
+
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -60,9 +81,15 @@
     font-size: 1.3em;
   }
 
+  .comic-page h5 {
+    font-size: 1.1em;
+  }
+
   .pop-up {
     font-size: 1.3em;
   }
+
+ 
 }
 
 /* Extra-Large devices (desktops, 1440px and up) */

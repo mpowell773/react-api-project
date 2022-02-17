@@ -13,11 +13,15 @@ const Form = ({ setFormSubmit, latestComicNumber }) => {
     //Logic to prevent user from submitting a fetch request if request is over latest comic number or if attempting negative numbers.
     if (form > latestComicNumber) {
       alert.show(
-        <div className="alert">{`Hey! The lastest comic is currently #${latestComicNumber}. Don't go past that number. >:(`}</div>
+        <span className="alert">{`Hey! The lastest comic is currently #${latestComicNumber}. Don't go past that number. >:(`}</span>
       );
     } else if (form < 0) {
       alert.show(
-        <div className="alert">{`You realize that we can't go back in time right?`}</div>
+        <span className="alert">{`You realize that we can't go back in time right?`}</span>
+      );
+    } else if (form === 0) {
+      alert.show(
+        <span className="alert">{`This isn't a javascript array. The comic series starts at 1.`}</span>
       );
     } else {
       setFormSubmit(form);

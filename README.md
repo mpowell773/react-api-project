@@ -3,11 +3,11 @@
 ## Project Links
 
 - [github repo link](https://github.com/mpowell773/react-api-project)
-- [DOES NOT EXIST YET: deployment link]()
+- [ deployment link](https://mpowell773.github.io/react-api-project/)
 
 ## Project Description
 
-I am using xkcd's API to pull a random comic on the main page. There will be a subsequent tab where you can search by number for a comic. Post MVP, After the fetch to xkcd, my plan is to fetch from GIPHY a random GIF tied to the title of the xkcd comic.
+I am using xkcd's API to pull a random comic on the main page. There will be a subsequent tab where you can search by number for a comic. Post MVP, after the fetch to xkcd, my plan is to fetch from GIPHY a random GIF tied to the title of the xkcd comic.
 
 *Edit*
 While working on this project, I realized that xkcd's normal website is not at all mobile-friendly, so I really pressed down on making a mobile-friendly variation of the site. While my post-MVP of fetching an image from GIPHY is still on the table for the future, I decided to not pursue it for the time being.
