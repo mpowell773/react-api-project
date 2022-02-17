@@ -26,7 +26,8 @@ const Form = ({ setFormSubmit, latestComicNumber }) => {
 
   const handleChange = (event) => {
     event.preventDefault();
-    setForm(event.target.value);
+    //Very interesting bugs were happening, since the value being passed in was a string
+    setForm(parseInt(event.target.value));
   };
 
   return (
