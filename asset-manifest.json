@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/react-api-project/static/css/main.12905da2.css",
-    "main.js": "/react-api-project/static/js/main.b5691823.js",
+    "main.js": "/react-api-project/static/js/main.ac08295a.js",
     "static/js/787.15ed2070.chunk.js": "/react-api-project/static/js/787.15ed2070.chunk.js",
     "static/media/xkcd-script.woff": "/react-api-project/static/media/xkcd-script.2705a73ab157d162b294.woff",
     "index.html": "/react-api-project/index.html",
     "main.12905da2.css.map": "/react-api-project/static/css/main.12905da2.css.map",
-    "main.b5691823.js.map": "/react-api-project/static/js/main.b5691823.js.map",
+    "main.ac08295a.js.map": "/react-api-project/static/js/main.ac08295a.js.map",
     "787.15ed2070.chunk.js.map": "/react-api-project/static/js/787.15ed2070.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.12905da2.css",
-    "static/js/main.b5691823.js"
+    "static/js/main.ac08295a.js"
   ]
 }
