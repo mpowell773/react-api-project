@@ -5,17 +5,17 @@ import "./NavBar.css";
 const NavBar = () => {
   return (
     <nav className="nav-bar">
-      <Link to="/react-api-project">
+      <Link to="/">
         <img src={icon} alt="a stick figure" />{" "}
       </Link>
       <ul>
-        <Link to="/react-api-project/random">
+        <Link to="/random">
           <li>Random</li>
         </Link>
-        <Link to="/react-api-project/search">
+        <Link to="/search">
           <li>Search</li>
         </Link>
-        <Link to="/react-api-project/bio">
+        <Link to="/bio">
           <li>Bio</li>
         </Link>
       </ul>
